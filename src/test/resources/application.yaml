@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+
+    hikari:
+      maximum-pool-size: 2
+      connection-timeout: 250
+
+mybatis:
+  mapper-locations: classpath*:/mybatis/*.xml
+  type-aliases-package: com.theopendle.spring.demo.model

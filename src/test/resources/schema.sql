@@ -1,0 +1,11 @@
+DROP SCHEMA IF EXISTS SPRING_DEMO CASCADE;
+CREATE SCHEMA SPRING_DEMO;
+SET SCHEMA SPRING_DEMO;
+
+CREATE TABLE clients (
+    id int(11) NOT NULL AUTO_INCREMENT,
+    first_name varchar(45) NOT NULL,
+    last_name varchar(45) NOT NULL,
+
+    PRIMARY KEY (id)
+);
